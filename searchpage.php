@@ -49,11 +49,22 @@
 							</p>
 						</label>
 						<label for="text"> טקסט חופשי </label>
-						<input type="text" name="text"/>					
+						<input type="text" name="text"/>	
+						<div class="clear"></div>
+						<div class="line"></div>
+						<input type="checkbox" name="women" value="women">
+						<label for="women">נשים</label>
+						<input type="checkbox" name="man" value="man">
+						<label for="man">גברים</label>
+						<input type="checkbox" name="optic" value="optic">
+						<label for="optic">שמש/אופטי</label>
+						<input type="checkbox" name="polaroid" value="polaroid">
+						<label for="polaroid">פולארויד</label>
+										
 					</form>
 			</section>
 			<main>
-				
+			
 			</main>
 			<footer>
 				<nav id="navInFooterCollecP">

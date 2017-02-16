@@ -899,30 +899,29 @@ background-repeat:no-repeat;
 
 #searchP form {
 	margin:0 auto;
-	width: 100%;
+	width: 80%;
 }
+
 
 #searchP form label{
 	direction: rtl;
-	margin-left:30px;
 }
-
-#searchP form label:nth-child(1){
-	float:right;
-	margin:70px 40px 0px 0px;
-}
-
-#searchP form label:nth-child(2){
-	float:right;
-	margin:70px 40px 0px 0px;
-}
-
 #searchP select{
 	height: 22px;
 	width: 112px;
 	
 }
-
+/*brand*/
+#searchP form label:nth-child(1){
+	float:right;
+	margin:70px 40px 0px 0px;
+}
+/*color*/
+#searchP form label:nth-child(2){
+	float:right;
+	margin:70px 40px 0px 0px;
+}
+/*price*/
 #searchP form label:nth-child(3){
 	float:right;
 	margin:70px 40px 2px 0px;
@@ -940,7 +939,7 @@ background-repeat:no-repeat;
 	float:right;
 	margin:70px 12px 2px 0px;
 }
-
+/*free text*/
 #searchP form label:nth-child(7){
 	float:right;
 	margin:70px 40px 2px 0px;
@@ -951,3 +950,53 @@ background-repeat:no-repeat;
 	height: 22px;
 	margin:86px -56px 0px 0px;
 }
+
+.line{
+	
+	width: 100%;
+	height: 0px;
+	border:solid #d8d8d8;
+	border-width: 1px 0px 0px 0px;
+	margin: 16px 0px 10px 0px;
+}
+/*checkboxs woman */
+#searchP form input:nth-child(11){
+	
+	border: solid #d8d8d8;
+	margin:0px 137px 0px 0px;
+}
+#searchP form label:nth-child(12){
+	float:right;
+}
+/*checkboxs men */
+#searchP form input:nth-child(13){
+	
+	border: solid #d8d8d8;
+	margin:0px 26px 0px 0px;
+}
+#searchP form label:nth-child(14){
+	float:right;
+	margin:0px 0px 0px 0px;
+}
+/*checkboxs sun/optic */
+#searchP form input:nth-child(15){
+	
+	border: solid #d8d8d8;
+	margin:0px 33px 0px 0px;
+}
+#searchP form label:nth-child(16){
+	float:right;
+	margin:0px 0px 0px 0px;
+}
+/*polaroid*/
+#searchP form input:nth-child(17){
+	
+	border: solid #d8d8d8;
+	margin:0px 33px 0px 0px;
+}
+#searchP form label:nth-child(18){
+	float:right;
+	margin:0px 0px 0px 0px;
+}
+
+
