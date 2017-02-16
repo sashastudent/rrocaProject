@@ -1,5 +1,5 @@
 /**
- * @author sasha & alisa
+ * @author Sasha & Alisa
  */
 
 $("document").ready(function() {
