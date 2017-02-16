@@ -18,7 +18,7 @@
 						<li><a href ="#"class="nav_white">Hot in rroca</a></li>
 						<li><a href ="#"class="nav_white">Magazine</a></li>
 						<li><a href ="#"class="nav_grey">Franchising Opportunities</a></li>
-						<li><a href ="#"class="nav_grey">חיפוש דגם</a></li>
+						<li><a href ="searchpage.php"class="nav_grey">חיפוש דגם</a></li>
 						<li><a href ="#"class="nav_grey">שמש אופטי</a></li>
 						<li class="icon">
 							<a href="javascript:void(0);"  onclick="myFunction()">☰</a>
@@ -52,7 +52,9 @@
 						<input type="text" name="text"/>					
 					</form>
 			</section>
-			<main></main>
+			<main>
+				
+			</main>
 			<footer>
 				<nav id="navInFooterCollecP">
 					<ul>

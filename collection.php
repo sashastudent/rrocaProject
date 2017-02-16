@@ -21,7 +21,7 @@
 						<li><a href ="#"class="nav_grey">סניפים</a></li>
 						<li><a href ="#"class="nav_grey">שרות לקחות</a></li>
 						<li><a href ="#"class="nav_grey">צור קשר</a></li>
-						<li><a href ="#" class="nav_grey">חיפוש דגם</a></li>				
+						<li><a href ="searchpage.php" class="nav_grey">חיפוש דגם</a></li>				
 						<li class="icon">
                         <a href="javascript:void(0);"  onclick="myFunction()">☰</a>
                     	</li>
