@@ -1,0 +1,953 @@
+@viewport
+{
+width: 480px;
+zoom: 1;
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+article, header, main, nav, footer, section, aside {
+	display: block;
+}
+
+body {
+	background: #d3d3d3;
+	font-size: 100%;
+}
+
+header {
+	width: 100%;
+	height: 78px;
+	background: #201f1f;
+}
+
+nav {
+}
+
+footer {
+	width: 100%;
+	background: #080707;
+}
+
+a{
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+
+.nav_grey {
+	text-decoration: none;
+	font-family: 'Alef', sans-serif;
+	font-size:13px ;
+	color:#BBBABA;	
+}
+
+.nav_white {
+	text-decoration: none;
+	font-family: 'Alef', sans-serif;
+	font-size:13px ;
+	color:#FFFFFF;
+	 font-weight: bold;	
+} 
+
+#logo{
+	background-image: url(../images/logo.gif) ;
+	height:78px;
+	width:126px;
+	margin-left: 107px;
+	display: block;
+	float: left;
+	
+}
+
+ul{
+	list-style-type: none;
+	
+}
+
+/*nav in header all page*/
+
+header li{
+	float: right;
+}
+
+header ul{
+	padding: 48px 84px 0px 0px;
+	font-family: "Alef Hebrew";
+	font-size:1em;
+}
+
+header li > a{
+	color:#fffdfe;
+	margin-left: 17px;
+}
+
+/* collection page */
+
+#collec {
+	font-size:12px;	
+	
+}
+
+#wrapper #collec {
+	margin: 0 auto;
+	width: 100%;
+	background: url(../images/bgrCo.jpg) repeat-x;
+}
+
+#collec main {
+	padding: 0% 10% 9% 10%;
+	margin: 0 auto;
+	width: 80%;
+}
+
+#collec main > h1 {
+	border-bottom: #c8c8c8 solid 1.5px;
+	margin: 8.59375% 1% 1.9166667% -3%;
+	padding: 0% 0% 1.3821% 2.0731%;
+	color: rgba(32, 31, 31, 0.90);
+	font-family: "Alef Hebrew";
+}
+
+.itemBox {
+	width: 159px;
+	height: 102px;
+	background: #fefefe;
+	float: left;
+	padding-top: 20px;
+	margin: 0px 5px 4px 0px;
+	-webkit-box-shadow: 3px 3px 30px 0px rgba(50, 50, 50, 0.13);
+	-moz-box-shadow: 3px 3px 30px 0px rgba(50, 50, 50, 0.13);
+	box-shadow: 3px 3px 30px 0px rgba(50, 50, 50, 0.13);
+	
+}
+
+.itemBox a {
+	display: block;
+ 	background-position: center; 
+ 	margin: 0 auto;
+	height: 70%;
+	background-repeat: no-repeat;
+}
+
+#collec footer {
+	padding-top: 41px;
+	height: 131px;
+	
+}
+
+#collec main > section {
+
+	padding: 0px 109px 275px 110px;
+}
+
+#navInFooterCollecP ul {
+	margin: 0 auto;
+	width: 50.416667%;
+}
+
+#navInFooterCollecP ul > li {
+
+	margin-left: 13px;
+	float: left;
+}
+
+#navInFooterCollecP ul > li > a {
+	display: block;
+	color: #999999;
+	font-size: 1em;
+	font-family: "Alef Hebrew";
+	opacity: 0.8;
+}
+
+/* Home Page */
+
+#homeP{
+	font-size: 12px;
+	background-color: #090708;
+}
+
+#navInFooterHomeP > ul:nth-child(1) {
+	display: block;
+	float: right;
+	padding-right: 88px;
+	direction: rtl;
+}
+
+#navInFooterHomeP > ul:nth-child(2) {
+	display: block;
+	float: right;
+	padding-right: 47px;
+	direction: rtl;
+}
+
+#homeP section h1 {
+	
+	font-weight: bold;
+}
+
+input {
+	float:right;
+	background: #ffffff;
+	border-style:none;	
+}
+
+#homeP footer {
+	padding-top: 42px;
+	height: 150px;
+	margin:0px;
+	font-size: 12px;
+}
+
+/*responsiv home page & collection page*/
+
+@media (min-width:633px)
+{
+	
+	/*responsive home page*/
+	#homeP main {
+	min-height: 680px;
+	display: block;
+	margin: 0 auto;
+	background: no-repeat center center;
+	background-size: cover;
+	position:relative;	
+	}
+	
+	#navInMainHomeP section{	
+     width: 100%;
+     height: 73px;
+	 position: absolute;	
+	 bottom: 88px;
+	 background: #414141;
+	 opacity: 0.8;
+	 font-family: "Alef Hebrew";
+	 direction: rtl;
+	 
+	}
+	
+	#navInMainHomeP p{
+	font-size: 12px;
+	font-family: "Alef Hebrew";
+	}
+	
+	#navInMainHomeP section > ul> li:nth-child(1){
+	width:80px;
+	height: 73px;
+	float:left;
+	display: block;
+	background: #414141;
+	opacity: 0.5;
+	
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(2) > a{
+	display: block;
+	float: left;
+	width:155px;
+	height:58px;
+	background: #ffffff;
+	color:#000000;
+	padding: 15px 88px 0px 0px;
+	
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(3) > a{
+	display: block;
+	float: left;
+	width:113px;
+	height:58px;
+	background: #000000;
+	color:#ffffff;
+	padding:15px 112px 0px 18px;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(4) > a{
+	display: block;
+	float: left;
+	width:89px;
+	height:58px;
+	background: #b5b5b5;
+	color:#ffffff;
+	padding:15px 136px 0px 18px;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(5){
+	display: block;
+	float: left;
+	width:306px;
+	height:59px;
+	background: #414141;
+	direction: rtl;	
+	padding:14px 83px 0px 0px;
+	color: #ffffff;	 
+	font-family: "Alef Hebrew";
+	}
+
+	/*forme*/
+	p input{
+	width: 175px;
+	height: 18px;	
+	margin: 5px 0px 0px 0px;
+	}
+
+	.button{
+	cursor:pointer;	
+	width: 11px;
+	height: 18px;
+	margin :5px 7px 0px 0px;
+	}
+		
+	/*In Footer*/
+	#navInFooterHomeP > p {
+	margin: -42px 0px 0px 65px;
+	color: #999999;
+	font-size: 1em;
+	opacity: 0.8;
+	}
+	
+	#navInFooterHomeP > ul:nth-child(1) > li > a {
+	color: #999999;
+	font-size: 1em;
+	font-family: "Alef Hebrew";
+	opacity: 0.8;
+	}
+
+	#navInFooterHomeP > ul:nth-child(2) > li > a {
+
+	color: #999999;
+	font-size: 1em;
+	font-family: "Alef Hebrew";
+	opacity: 0.8;
+	}
+	
+	/*responsiv collection page*/	
+	#navInFooterCollecP > p {
+	margin: 46px 0px 0px 91px;
+	color: #999999;
+	font-size: 1em;
+	opacity: 0.8;
+	}
+	
+}
+
+@media (max-width: 632px) {
+
+/*responsive home page*/
+
+	#homeP main {
+		min-height: 480px;
+		display: block;
+		margin: 0 auto;
+		background: no-repeat center center;
+		background-size: cover;
+		position: relative;
+	}
+
+	#navInMainHomeP section {
+		width: 100%;
+		height: 43px;
+		position: absolute;
+		bottom: 88px;
+		background: #414141;
+		opacity: 0.8;
+		font-family: "Alef Hebrew";
+		direction: rtl;
+		font-size: 0.75em;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(1) {
+		width: 70px;
+		height: 43px;
+		float: left;
+		display: block;
+		background: #414141;
+		opacity: 0.5;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(2) > a {
+		display: block;
+		float: left;
+		width: 135px;
+		height: 38px;
+		background: #ffffff;
+		color: #000000;
+		padding: 5px 58px 0px 0px;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(3) > a {
+		display: block;
+		float: left;
+		width: 93px;
+		height: 38px;
+		background: #000000;
+		color: #ffffff;
+		padding: 5px 72px 0px 18px;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(4) > a {
+		display: block;
+		float: left;
+		width: 69px;
+		height: 38px;
+		background: #b5b5b5;
+		color: #ffffff;
+		padding: 5px 96px 0px 18px;
+	}
+
+	#navInMainHomeP section > ul > li:nth-child(5) {
+		display: block;
+		float: left;
+		width: 286px;
+		height: 39px;
+		background: #414141;
+		direction: rtl;
+		padding: 4px 53px 0px 0px;
+		color: #ffffff;
+		font-family: "Alef Hebrew";
+	}
+
+	/*forme*/
+	p input {
+		width: 175px;
+		height: 18px;
+		margin: -14px 95px 0px 0px;
+	}
+
+	.button {
+		cursor: pointer;
+		width: 11px;
+		height: 18px;
+		margin: -14px 3px 0px 0px;
+	}
+
+	/*In footer */
+	#navInFooterHomeP > p {
+		margin: 25px 0px 0px 10px;
+		color: #999999;
+		font-size: 0.75em;
+		opacity: 0.8;
+	}
+
+	#navInFooterHomeP > ul:nth-child(1) > li > a {
+		color: #999999;
+		font-size: 0.75em;
+		font-family: "Alef Hebrew";
+		opacity: 0.8;
+	}
+
+	#navInFooterHomeP > ul:nth-child(2) > li > a {
+
+		color: #999999;
+		font-size: 0.75em;
+		font-family: "Alef Hebrew";
+		opacity: 0.8;
+	}
+
+	/*responsiv collection page*/
+	#navInFooterCollecP > p {
+		margin: 19px 0px 0px 91px;
+		color: #999999;
+		font-size: 1em;
+		opacity: 0.8;
+	}
+
+}
+/* Hamburger*/
+ul{
+	 z-index: 10;
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	padding: 48px 84px 0px 0px;
+	font-family: "Alef Hebrew";
+	font-size: 1em;
+	
+}
+
+ul.topnav li a {
+	text-align: center;
+	transition: 0.3s;
+	
+}
+
+ul.topnav li a:hover {
+	background-color: #555;
+}
+
+ul.topnav li.icon {
+	display: none;
+	
+}
+
+@media screen and (max-width: 944px) {
+	ul.topnav li {
+		display: none;
+	}
+
+	ul.topnav li.icon {		
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+	}
+}
+
+@media screen and (max-width: 944px) {
+	ul.topnav.responsive {
+		position: relative;
+		background-color: #333;
+		opacity: 0.8;
+		width: 400px;
+	    margin-left: auto;
+	}
+
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		
+	}
+
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+		
+	}
+
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+		padding: 14px 16px;
+		font-size: 15px;		
+	}
+	
+	.icon a{
+		font-size:30px;	
+	}
+}
+
+
+/**Item page **/
+@media (min-width:1270px){
+
+.lightbox{
+	
+    position: absolute;
+   box-shadow: 0px 7px 6px #888888;
+    top: 420px;
+    right: 139px;
+	padding-right:3px;
+	
+	background-color: #FFFFFF;
+}
+.lightboxrow{
+	padding-top:8px;
+	padding-right:3px;
+	border-bottom: 1px solid #DEDEDE;
+	height:29px;
+	width:197px;
+	background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.lightboxitemimage1{
+	
+	background-image: url(../images/light_glesses.png);
+background-repeat:no-repeat;
+	
+	    background-position-x: 162px;
+}
+.lightboxitemimage2{
+	
+	background-image: url(../images/light_sun.png);
+	background-repeat:no-repeat;
+	    background-position-x: 167px;
+	    
+}
+.lightboxitemimage2 p{
+	padding-right: 39px;
+	padding-top:7px;
+}
+.lightboxitemimage1 p{
+	padding-right: 45px;
+	padding-top: 18px;
+}
+.lightboxitem{
+	height:45px;
+	width:197px;
+	background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.lightbox ~p{
+	
+	font-size: 10px;
+	font-family: 'Alef', sans-serif;
+	direction: rtl;
+	color:#080707;
+}
+
+#itemsP body{
+	background-color:#0A0909;
+	height:100%;
+	
+}
+
+.content{
+    position:relative;
+    padding-bottom: 192px;   
+	height: 759px;	
+	background: url(../images/man_in_glasses_home1.jpg) no-repeat center center ;
+	background-size:cover;
+   
+}
+
+.item_collection{ 
+	width:84%;
+	margin-left: 170px;
+	height: 327px;
+	background-image: url(../images/items_background.jpg);
+}
+.item_collection  ul{
+	list-style-type: none;
+	display:block;
+	float: right;
+}
+
+.border_bottom{
+	border-bottom: 1px solid #C8C8C8;
+}
+.border_left{
+	border-left: 1px solid #C8C8C8;
+
+}
+.item{
+	height: 111px;
+	width: 172px;
+}
+.item_black_square{
+
+	background-image: url(../images/glasses_black_square.png);
+}
+.item_black_round{
+	
+	background-image:  url(../images/glasses_black_round.png);
+}
+.item_brown{
+
+	background-image:  url(../images/glasses_brown.png);
+}
+.glasses_content{
+	position:absolute;
+	bottom:26px;
+	left:85px;
+	height:332px;
+	width:82%;
+	background-image: url(../images/contentGlassesBackground.jpg);
+	background-repeat: no-repeat;
+}
+#itemsP footer{
+	padding-top:42px;
+	right:0%;
+	left:0%;
+	bottom:0px;
+	margin:0 auto;
+	height:192px;
+	background-color: #0A0909;
+}
+#secondHomeNav > ul:nth-child(1) {
+	display: block;
+	float: right;
+	list-style-type: none;
+	padding-right: 88px;
+	direction: rtl;
+}
+
+#secondHomeNav > ul:nth-child(2) {
+	display: block;
+	float: right;
+	list-style-type: none;
+	padding-right: 47px;
+	direction: rtl;
+}
+
+#secondHomeNav a {
+
+	text-decoration: none;
+	color: #999999;
+	font-size: 12px;
+	font-family: 'Alef', sans-serif;
+	opacity: 0.8;
+}
+
+
+#secondHomeNav > p {
+
+	padding: 66px 0px 0px 108px;
+	color: #999999;
+	font-size: 12px;
+	opacity: 0.8;
+}
+}
+
+/************************  media Items page**********************/
+@media (max-width:1269px){
+
+.lightbox{
+	
+   position: absolute;
+   box-shadow: 0px 7px 6px #888888;
+    top: 420px;
+    right: 139px;
+	padding-right:3px;
+	
+	background-color: #FFFFFF;
+}
+.lightboxrow{
+	padding-top:8px;
+	padding-right:3px;
+	border-bottom: 1px solid #DEDEDE;
+	height:29px;
+	width:197px;
+	background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.lightboxitemimage1{
+	
+	background-image: url(../images/light_glesses.png);
+background-repeat:no-repeat;
+	
+	    background-position-x: 162px;
+}
+.lightboxitemimage2{
+	
+	background-image: url(../images/light_sun.png);
+	background-repeat:no-repeat;
+	    background-position-x: 167px;
+	    
+}
+.lightboxitemimage2 p{
+	padding-right: 39px;
+	padding-top:7px;
+}
+.lightboxitemimage1 p{
+	padding-right: 45px;
+	padding-top: 18px;
+}
+.lightboxitem{
+	height:45px;
+	width:197px;
+	background-color: #FFFFFF;
+    direction: rtl;
+}
+
+.lightbox ~p{
+	
+	font-size: 10px;
+	font-family: 'Alef', sans-serif;
+	direction: rtl;
+	color:#080707;
+}
+
+#itemsP body{
+	background-color:#0A0909;
+	height:100%;
+	
+}
+
+.content{
+    position:relative;
+    padding-bottom: 192px;   
+	height: 759px;	
+	background: url(../images/man_in_glasses_home1.jpg) no-repeat center center ;
+	background-size:cover;
+   
+}
+
+.item_collection{ 
+	width:82%;
+	margin-left: 170px;
+	height: 654px;
+	background-color:#E3E3E3;
+	background-image: url(../images/items_background.jpg);
+	background-repeat: no-repeat;
+}
+.item_collection  ul{
+	list-style-type: none;
+	display:block;
+	float: right;
+}
+
+.border_bottom{
+	border-bottom: 1px solid #C8C8C8;
+}
+.border_right{
+	border-right: 1px solid #C8C8C8;
+
+}
+.item{
+	height: 108px;
+	width: 169px;
+}
+.item_black_square{
+
+	background-image: url(../images/glasses_black_square.png);
+}
+.item_black_round{
+	
+	background-image:  url(../images/glasses_black_round.png);
+}
+.item_brown{
+
+	background-image:  url(../images/glasses_brown.png);
+}
+.glasses_content{
+	position:absolute;
+	bottom:26px;
+	left:85px;
+	height:332px;
+	width:82%;
+	background-image: url(../images/contentGlassesBackground.jpg);
+	background-repeat: no-repeat;
+}
+#itemsP footer{
+	padding-top:42px;
+	right:0%;
+	left:0%;
+	bottom:0px;
+	margin:0 auto;
+	height:192px;
+	background-color: #0A0909;
+	margin-top: 260px;
+}
+#secondHomeNav > ul:nth-child(1) {
+	display: block;
+	float: right;
+	list-style-type: none;
+	padding-right: 88px;
+	direction: rtl;
+}
+
+#secondHomeNav > ul:nth-child(2) {
+	display: block;
+	float: right;
+	list-style-type: none;
+	padding-right: 47px;
+	direction: rtl;
+}
+
+#secondHomeNav a {
+
+	text-decoration: none;
+	color: #999999;
+	font-size: 12px;
+	font-family: 'Alef', sans-serif;
+	opacity: 0.8;
+}
+
+
+#secondHomeNav > p {
+
+	padding: 66px 0px 0px 108px;
+	color: #999999;
+	font-size: 12px;
+	opacity: 0.8;
+}
+}
+/****************search page****************/
+
+
+#searchP {
+	font-size:12px;	
+	font-family: "Alef Hebrew";
+}
+
+#searchP footer{
+	padding-top: 41px;
+	height: 111px;
+}
+
+#searchP section{
+	height: 163px;
+	background: url(../images/bgr-search-page-section.jpg) repeat-x;	
+}
+
+#searchP h1{
+	font-weight:bold;
+	float:right;
+	margin: 80px 137px 0px 0px;
+}
+
+#searchP main{
+	min-height: 840px;
+	background: url(../images/bgr-search-page-main.jpg) repeat-x;
+}
+
+/*******form************/
+
+
+#searchP form {
+	margin:0 auto;
+	width: 100%;
+}
+
+#searchP form label{
+	direction: rtl;
+	margin-left:30px;
+}
+
+#searchP form label:nth-child(1){
+	float:right;
+	margin:70px 40px 0px 0px;
+}
+
+#searchP form label:nth-child(2){
+	float:right;
+	margin:70px 40px 0px 0px;
+}
+
+#searchP select{
+	height: 22px;
+	width: 112px;
+	
+}
+
+#searchP form label:nth-child(3){
+	float:right;
+	margin:70px 40px 2px 0px;
+}
+
+#searchP  input{
+	direction: rtl;
+	width: 37px;
+	height:21px;
+	margin:86px -24px 0px 43px;
+	border: 1px solid #c8c8c8;
+}
+
+#searchP form label:nth-child(6){
+	float:right;
+	margin:70px 12px 2px 0px;
+}
+
+#searchP form label:nth-child(7){
+	float:right;
+	margin:70px 40px 2px 0px;
+}
+
+#searchP form input:nth-child(8){
+	width: 147px;
+	height: 22px;
+	margin:86px -56px 0px 0px;
+}
