@@ -29,7 +29,7 @@
 			</header>
 			<section>
 				<h1>חיפוש דגם</h1>
-					<form action="#" method="post">
+					<form action="searchpage.php" method="post">
 						<label> מותג 
 							<p><select name="brand" id="brandJson">
 								</select>
@@ -37,12 +37,13 @@
 						</label>
 						<label> צבע 
 							<p><select name="color" id="colorsJson">
+								<!--<option value=""></option>-->
 								</select>
 							</p>
 						</label>	
 						<label for="priceFrom","priceTo" > מחיר </label>
-						<input type="text" name="priceFrom" placeholder="מ">									
-						<input type="text" name="priceTo" placeholder="עד">
+						<input type="text" name="priceFrom" required="on" placeholder="מ">									
+						<input type="text" name="priceTo" required="on" placeholder="עד">
 						<label> סוג מסגרת 
 							<p><select name="frame" id="framesJson">
 								</select>
@@ -60,11 +61,85 @@
 						<label for="optic">שמש/אופטי</label>
 						<input type="checkbox" name="polaroid" value="polaroid">
 						<label for="polaroid">פולארויד</label>
-										
+						<button>שלח</button>
+								
 					</form>
 			</section>
 			<main>
+				<section>
+				<?php
 			
+					include ('includs/db.php');
+					$output = NULL;
+					$brand = $connection->real_escape_string($_POST['brand']);
+					$color = $connection->real_escape_string($_POST['color']);
+					$fprice= $connection->real_escape_string($_POST['priceFrom']);
+					$tprice= $connection->real_escape_string($_POST['priceTo']);
+					$frame = $connection->real_escape_string($_POST['frame']);
+					$text =  $connection->real_escape_string($_POST['text']);
+				
+					if (!empty($_POST['women'])){
+						$women = 1;
+					}
+					else{
+						$women = 0;
+					}
+					if (!empty($_POST['man'])){
+						$man = 1;
+					}
+					else{
+						$man = 0;
+					}
+					if (!empty($_POST['optic'])){
+						$optic = 1;
+					}
+					else{
+						$optic = 0;
+					}
+						if (!empty($_POST['polaroid'])){
+						$plaroid = 1;
+					}
+					else{
+						$plaroid = 0;
+					}
+									
+					$query = "SELECT I.color, I.frame, I.price, I.pic_name, I.model, C.name
+							  FROM tbl_item_223 I
+							  INNER JOIN tbl_collections_223 C
+							  ON C.id = I.collection
+							  WHERE C.name = '$brand'
+							  AND I.frame='$frame'
+							  AND I.price >= '$fprice'
+							  AND I.price <= '$tprice'";
+								
+					$result = mysqli_query($connection, $query);
+						
+						
+					if(!$result){
+							die("DB query failed");
+					}
+					
+	
+					if($result->num_rows > 0){
+					
+						while($rows = mysqli_fetch_assoc($result))
+						{
+							$imgpath = "images/".$rows['pic_name'].".png";
+							
+							echo"<div class=resultBox>"."<p>".$rows['name']."</p>";
+							echo"<p>".$rows['model']."</p>";
+							echo"<img src=".$imgpath.">";
+							echo"<p>".$rows['price']."</p></div>";
+						
+						
+						}		
+					}else{
+						$output =  "אין תוצאות חיפוש";
+						echo "<p class=noResult>".$output."</p>";
+					}
+	
+			?>
+			 	</section>
 			</main>
 			<footer>
 				<nav id="navInFooterCollecP">
@@ -87,3 +162,7 @@
 		</div>
 	</body>
 </html>
+<?
+//close DB connectoion 
+mysqli_close($connaction);
+?>
