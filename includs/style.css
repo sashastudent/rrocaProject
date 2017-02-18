@@ -70,6 +70,10 @@ ul{
 	
 }
 
+footer a:hover{
+	 background: #555;
+}
+
 /*nav in header all page*/
 
 header li{
@@ -86,6 +90,7 @@ header li > a{
 	color:#fffdfe;
 	margin-left: 17px;
 }
+
 
 /* collection page */
 
@@ -326,7 +331,7 @@ input {
 	opacity: 0.8;
 	}
 	
-	/*responsiv collection page*/	
+	/*responsiv collection footer page*/	
 	#navInFooterCollecP > p {
 	margin: 46px 0px 0px 91px;
 	color: #999999;
@@ -880,6 +885,7 @@ background-repeat:no-repeat;
 
 #searchP section{
 	height: 163px;
+	direction: rtl;	
 	background: url(../images/bgr-search-page-section.jpg) repeat-x repeat-y;	
 }
 
@@ -941,6 +947,7 @@ background-repeat:no-repeat;
 	border: 1px solid #c8c8c8;
 }
 
+/*frame*/
 #searchP form label:nth-child(6){
 	float:right;
 	margin:70px 12px 2px 0px;
@@ -1013,8 +1020,9 @@ button{
 	height:24px;
 	border:none;
 	cursor:pointer;
-	margin: 2px 0px 0px 0px ;
-	float: left;
+	float: right;
+	margin: 2px 260px 0px 0px;
+
 }
 button:hover{
 	background:#404040;
@@ -1022,18 +1030,217 @@ button:hover{
 
 /*responsive search page*/
 
-@media (max-width: 1173px){
+@media (min-width:867px) and (max-width:1174px){
 	
 	#searchP section{
 		height: 363px;
-		width:100%;		
+		width:100%;	
+		direction: rtl;	
 	}
 	
 	#searchP form {
 	margin:0 auto;
-	width: 80%;
+	width: 100%;
+	margin-right: 118px;
 	}
+
+	
+	#searchP h1{	
+	font-weight:bold;
+	margin: 10px 115px 20px 83%;
+	}
+
+	/*brand*/
+	#searchP form label:nth-child(1){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+	/*color*/
+	#searchP form label:nth-child(2){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+	/*price*/
+	#searchP form label:nth-child(3){
+	float:none;
+	margin:0px 0px 0px 100%;
+	}
+
+	#searchP input{
+	margin:0px 0px 0px 10px;
+	}
+	
+	#searchP input:nth-child(5){
+		
+		margin:0px 0px 10px 90%;
+	}
+	
+	/*frame*/
+	#searchP form label:nth-child(6){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+	
+	/*free text label*/
+	#searchP form label:nth-child(7){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+
+	/*free text input*/
+	#searchP form input:nth-child(8){
+	margin:0px 0px 0px 0px;
+	}
+
+	/*checkboxs woman */
+	#searchP form input:nth-child(11){
+	border: solid #d8d8d8;
+	margin:0px -10px 0px 0px;
+	}
+
+	
+	/*checkboxs men */
+	#searchP form input:nth-child(13){	
+	border: solid #d8d8d8;
+	margin:0px 26px 0px 0px;
+	}
+	
+	/*checkboxs sun/optic */
+	#searchP form input:nth-child(15){	
+	border: solid #d8d8d8;
+	margin:0px 33px 0px 0px;
+	}
+
+	/*polaroid*/
+	#searchP form input:nth-child(17){	
+	border: solid #d8d8d8;
+	margin:0px 33px 0px 0px;
+	}
+
+	/*button*/
+	button{
+	margin: 0px 33px 0px 0px;
+
+	}
+
 }
+
+@media (max-width:866px){
+	
+	#searchP section{
+		height: 390px;
+		width:100%;	
+		direction: rtl;	
+	}
+	
+	#searchP form {
+	margin:0 auto;
+	width: 100%;
+	margin-right: 118px;
+	
+	}
+
+	
+	#searchP h1{	
+	font-weight:bold;
+	margin: 10px 116px 15px 101%;
+	}
+
+	/*brand*/
+	#searchP form label:nth-child(1){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+	/*color*/
+	#searchP form label:nth-child(2){
+	margin:0px 0px 0px 101%;
+	}
+	/*price*/
+	#searchP form label:nth-child(3){
+	float:none;
+	margin:0px 0px 0px 100%;
+	}
+
+	#searchP input{
+		
+	margin:0px 0px 5px 10px;
+	}
+	
+	#searchP input:nth-child(5){
+		float:none;
+		margin:0px 0px 10px 90%;
+	}
+	
+	/*frame*/
+	#searchP form label:nth-child(6){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+	
+	/*free text label*/
+	#searchP form label:nth-child(7){
+	float:none;
+	margin:0px 0px 0px 101%;
+	}
+
+	/*free text input*/
+	#searchP form input:nth-child(8){
+	margin:0px 0px 0px 0px;
+	}
+
+	/*checkboxs woman */
+	#searchP form input:nth-child(11){
+	border: solid #d8d8d8;
+	margin:0px -10px 0px 0px;
+	}
+
+	
+	/*checkboxs men */
+	#searchP form input:nth-child(13){	
+	border: solid #d8d8d8;
+	margin:0px 26px 0px 0px;
+	}
+	
+	/*checkboxs sun/optic */
+	#searchP form input:nth-child(15){	
+	border: solid #d8d8d8;
+	margin:0px 33px 0px 0px;
+	}
+
+	/*polaroid*/
+	#searchP form input:nth-child(17){	
+	border: solid #d8d8d8;
+	margin:0px 33px 0px 0px;
+	}
+
+	/*button*/
+	button{
+	margin: 0px 33px 0px 0px;
+
+	}
+
+}
+
+.isresponsiv{
+	visibility: hidden;
+	font-weight: bold;
+}
+
+@media (max-width:641px)
+{
+	#searchP section{
+		visibility: hidden;
+		background: 
+	}
+	.isresponsiv{
+		visibility: visible;
+		padding-left:40px;
+		
+	}
+
+
+}
+
 
 /* #searchP main result search */
 
@@ -1069,7 +1276,6 @@ button:hover{
 .resultBox img:nth-child(4){
 	margin: -8px 0px -10px 7px;
 }
-
 
 /*price in result box*/
 .resultBox p:nth-child(5){

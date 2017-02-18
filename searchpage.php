@@ -65,6 +65,7 @@
 					</form>
 			</section>
 			<main>
+				<p class="isresponsiv">no responsive for phone</p>
 				<section>
 				<?php
 				  	if(isset($_POST['submit'])){
