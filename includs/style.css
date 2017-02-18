@@ -904,7 +904,7 @@ background-repeat:no-repeat;
 #searchP main > section{
 	width: 93.5%;
 	margin: 0 auto;
-	padding:66px 0px 0px 0px;
+	padding:33px 0px 0px 33px;
 	
 }
 
@@ -1026,6 +1026,7 @@ button{
 }
 button:hover{
 	background:#404040;
+	border:sol
 }
 
 /*responsive search page*/
