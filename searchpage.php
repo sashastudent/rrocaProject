@@ -29,7 +29,7 @@
 			</header>
 			<section>
 				<h1>חיפוש דגם</h1>
-					<form action="searchpage.php" method="post">
+					<form action="searchpage.php" method="post" autocomplete="on">
 						<label> מותג 
 							<p><select name="brand" id="brandJson">
 								</select>
@@ -37,7 +37,6 @@
 						</label>
 						<label> צבע 
 							<p><select name="color" id="colorsJson">
-								<!--<option value=""></option>-->
 								</select>
 							</p>
 						</label>	
@@ -61,49 +60,50 @@
 						<label for="optic">שמש/אופטי</label>
 						<input type="checkbox" name="polaroid" value="polaroid">
 						<label for="polaroid">פולארויד</label>
-						<button>שלח</button>
+						<button type="submit" name="submit">שלח</button>
 								
 					</form>
 			</section>
 			<main>
 				<section>
 				<?php
-			
-					include ('includs/db.php');
-					$output = NULL;
-					$brand = $connection->real_escape_string($_POST['brand']);
-					$color = $connection->real_escape_string($_POST['color']);
-					$fprice= $connection->real_escape_string($_POST['priceFrom']);
-					$tprice= $connection->real_escape_string($_POST['priceTo']);
-					$frame = $connection->real_escape_string($_POST['frame']);
-					$text =  $connection->real_escape_string($_POST['text']);
+				  	if(isset($_POST['submit'])){
+				  		
+						include ('includs/db.php');
+						$output = NULL;
+						$brand = $connection->real_escape_string($_POST['brand']);
+						$color = $connection->real_escape_string($_POST['color']);
+						$fprice= $connection->real_escape_string($_POST['priceFrom']);
+						$tprice= $connection->real_escape_string($_POST['priceTo']);
+						$frame = $connection->real_escape_string($_POST['frame']);
+						$text =  $connection->real_escape_string($_POST['text']);
 				
-					if (!empty($_POST['women'])){
-						$women = 1;
-					}
-					else{
-						$women = 0;
-					}
-					if (!empty($_POST['man'])){
-						$man = 1;
-					}
-					else{
-						$man = 0;
-					}
-					if (!empty($_POST['optic'])){
-						$optic = 1;
-					}
-					else{
-						$optic = 0;
-					}
-						if (!empty($_POST['polaroid'])){
-						$plaroid = 1;
-					}
-					else{
-						$plaroid = 0;
-					}
+						if (!empty($_POST['women'])){
+							$women = 1;
+						}
+						else{
+							$women = 0;
+						}
+						if (!empty($_POST['man'])){
+							$man = 1;
+						}
+						else{
+							$man = 0;
+						}
+						if (!empty($_POST['optic'])){
+							$optic = 1;
+						}
+						else{
+							$optic = 0;
+						}
+							if (!empty($_POST['polaroid'])){
+							$plaroid = 1;
+						}
+						else{
+							$plaroid = 0;
+						}
 									
-					$query = "SELECT I.color, I.frame, I.price, I.pic_name, I.model, C.name
+						$query = "SELECT I.color, I.frame, I.price, I.pic_name, I.model, C.name
 							  FROM tbl_item_223 I
 							  INNER JOIN tbl_collections_223 C
 							  ON C.id = I.collection
@@ -112,33 +112,32 @@
 							  AND I.price >= '$fprice'
 							  AND I.price <= '$tprice'";
 								
-					$result = mysqli_query($connection, $query);
+						$result = mysqli_query($connection, $query);
 						
 						
-					if(!$result){
-							die("DB query failed");
-					}
+						if(!$result){
+								die("DB query failed");
+						}
 					
 	
-					if($result->num_rows > 0){
+						if($result->num_rows > 0){
 					
-						while($rows = mysqli_fetch_assoc($result))
-						{
-							$imgpath = "images/".$rows['pic_name'].".png";
+							while($rows = mysqli_fetch_assoc($result))
+							{
+								$imgpath = "images/".$rows['pic_name'].".png";
 							
-							echo"<div class=resultBox>"."<p>".$rows['name']."</p>";
-							echo"<p>".$rows['model']."</p>";
-							echo"<img src=".$imgpath.">";
-							echo"<p>".$rows['price']."</p></div>";
-						
-						
-						}		
-					}else{
-						$output =  "אין תוצאות חיפוש";
-						echo "<p class=noResult>".$output."</p>";
-					}
-	
-			?>
+								echo"<div class=resultBox>"."<p>".$rows['name']."</p>";
+								echo"<p>".$rows['model']."</p>";
+								echo"<div class=clear></div><img src=".$imgpath.">";
+								echo"<p>".$rows['price']." ש&quot;ח </p></div>";
+							
+							}		
+						}else{
+							$output =  "אין תוצאות חיפוש";
+							echo "<p class=noResult>".$output."</p>";
+						}
+				  	}
+				?>
 			 	</section>
 			</main>
 			<footer>

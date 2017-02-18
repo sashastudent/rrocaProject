@@ -896,9 +896,10 @@ background-repeat:no-repeat;
 }
 
 #searchP main > section{
-	width: 85%;
+	width: 93.5%;
 	margin: 0 auto;
-	padding-top:66px;
+	padding:66px 0px 0px 0px;
+	
 }
 
 /*******form************/
@@ -1001,7 +1002,7 @@ background-repeat:no-repeat;
 }
 #searchP form label:nth-child(18){
 	float:right;
-	margin:0px 0px 0px 0px;
+
 }
 /*button*/
 button{
@@ -1012,6 +1013,8 @@ button{
 	height:24px;
 	border:none;
 	cursor:pointer;
+	margin: 2px 0px 0px 0px ;
+	float: left;
 }
 button:hover{
 	background:#404040;
@@ -1035,10 +1038,13 @@ button:hover{
 /* #searchP main result search */
 
 .resultBox{
-	width:205px;
-	height:136px;
-	background: #efefef;
-	border: solid #c8c8c8;	
+		
+	width:180px;
+	height:127px;
+	padding:8px 14px 3px 14px;
+	float:left;
+	margin: 0px 13px 9px 0px;;
+	background: url(../images/bjr-resultbox.jpg) no-repeat;
 }
 
 .noResult{
@@ -1060,5 +1066,13 @@ button:hover{
 	float: right;
 }
 
+.resultBox img:nth-child(4){
+	margin: -8px 0px -10px 7px;
+}
 
 
+/*price in result box*/
+.resultBox p:nth-child(5){
+	direction:rtl;
+	margin: 0px 75px 0px 0px;
+}
