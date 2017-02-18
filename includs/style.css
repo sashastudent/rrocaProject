@@ -1035,7 +1035,7 @@ button{
 }
 button:hover{
 	background:#404040;
-	border:sol
+	border:solid gray;
 }
 
 /*responsive search page*/
