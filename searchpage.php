@@ -70,6 +70,7 @@
 				<?php
 						include ('includs/search.php');			
 				?>
+				<div class="clear"></div>
 			 	</section>
 			</main>
 			<footer>

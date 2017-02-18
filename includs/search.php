@@ -23,8 +23,8 @@ if (!isset($_POST['submit'])) {
 
 		}
 	}
-}
-else if (isset($_POST['submit'])) {
+	mysqli_free_result($result);
+} else if (isset($_POST['submit'])) {
 	include ('includs/db.php');
 	$output = NULL;
 	$brand = $connection -> real_escape_string($_POST['brand']);
@@ -192,5 +192,7 @@ else if (isset($_POST['submit'])) {
 		$output = "אין תוצאות חיפוש";
 		echo "<p class=noResult>" . $output . "</p>";
 	}
+
+	mysqli_free_result($result);
 }
 ?>

@@ -143,6 +143,8 @@ header li > a{
 #collec footer {
 	padding-top: 41px;
 	height: 131px;
+	bottom:0px;
+	position:fixed;
 	
 }
 
@@ -876,11 +878,14 @@ background-repeat:no-repeat;
 #searchP {
 	font-size:12px;	
 	font-family: "Alef Hebrew";
+	background: #e5e5e5;
 }
 
 #searchP footer{
 	padding-top: 41px;
 	height: 111px;
+	bottom:0px;
+	position:fixed;
 }
 
 #searchP section{
@@ -897,8 +902,8 @@ background-repeat:no-repeat;
 
 #searchP main{
 	min-height: 840px;
+	height: 100%;
 	background: url(../images/bgr-search-page-main.jpg) repeat-x ;
-
 }
 
 #searchP main > section{
@@ -908,6 +913,10 @@ background-repeat:no-repeat;
 	
 }
 
+#searchP #wrapper{
+	background: #e5e5e5;
+}
+	
 /*******form************/
 
 #searchP form {
