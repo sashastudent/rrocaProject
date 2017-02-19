@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Rroca Home page</title>
+		<link rel="stylesheet" href="includs/style.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script src="includs/jquery-3.1.1.min.js"></script>
+		<script src="includs/script.js"></script>
+	</head>
+	<body id="homeP">
+		<div id="table_wrapper">
+			<header>
+				<a href="index.html" id="logo" ></a>
+				<nav>
+					<ul class="topnav" id="myTopnav">
+						<li><a href ="collection.php" class="nav_white">Collection</a></li>
+						<li><a href ="#"class="nav_white">Hot in rroca</a></li>
+						<li><a href ="#"class="nav_white">Magazine</a></li>
+						<li><a href ="#"class="nav_grey">Franchising Opportunities</a></li>
+						<li><a href ="#"class="nav_grey">חיפוש דגם</a></li>
+						<li><a href ="#"class="nav_grey">שמש אופטי</a></li>
+						<li class="icon">
+                        <a href="javascript:void(0);"  onclick="myFunction()">☰</a>
+                    	</li>			
+					</ul>
+					<div class="clear"></div>
+				</nav>	
+			</header>
+			<main id="form_add_update">
+				
+ 				<form action="add_update.php" method="post">
+				<p><label>Glasses Index: </label><input class="input" readonly="true" name="id" ></p>
+				
+				<p><label>Enter model number: </label><input class="input"  required pattern=".{7,7}"  type="number" name="model"  value=""></p>
+				<p><label>Enter price: </label><input class="input"  required  type="number" name="price" maxlength="4" value=""></p>
+				<p><label>Is optic?</label></p>
+				<p><label>Yes </label><input type="radio" name="is_optic" value="1" required></p>
+				<p><label>No </label> <input type="radio" name="is_optic" value="0"></p> <br>
+				<p><label>Is poleroid?</label></p>
+				<p><label>Yes </label><input type="radio" name="is_poleroid" value="1" required></p>
+				<p><label>No </label> <input type="radio" name="is_poleroid" value="0"></p> <br>
+				<p><label>Choose pic name: </label><select name="pic" required> 
+					 <option value="" selected></option> 
+					<option value="item_black_square">item_black_square</option> 
+					<option value="item_brown">item_brown</option>
+					<option value="item_black_round">item_black_round</option>
+				</select></p>
+				 <p><label>Choose collection: </label><select name="collection" required>
+				 	 <option value="" selected></option> 
+					<option value="13">armani.gif</option> 
+					<option value="9">arnette.gif</option> 
+					<option value="17">carrera.gif</option>
+					<option value="16">diesel.gif</option>
+					<option value="14">dolce-gabbana.gif.gif</option>
+					<option value="10">gucci.gif</option>
+					<option value="12">jetset.gif</option>
+					<option value="15">pierre.gif</option>
+					<option value="7">prada.gif</option>
+					<option value="18">ray-ban.gif</option>
+					<option value="5">rroca-active.gif</option>
+					<option value="6">rroca-classic.gif</option>
+					<option value="4">rroca-everyday.gif</option>
+					<option value="3">rroca-junior.gif</option>
+					<option value="1">rroca-man.gif</option>
+					<option value="2">rroca-trend.gif</option>
+					<option value="8">versace.gif</option>
+					<option value="11">yvessantlaurent.gif</option>
+				</select></p>
+				<p><label>Choose gender:</label></p>
+				<p><label>Man </label><input type="radio" name="gender" value="0" required></p>
+				<p><label>Woman</label> <input type="radio" name="gender" value="1" required></p> <br>
+				 <p><label>Choose color: </label>
+				 	<select name="color" required> 
+					    <option value="" selected></option> 
+						<option value="שחור">black</option> 
+						<option value="חום">brown</option> 
+				</select></p>
+				 <p><label>Choose frame: </label>
+				 	<select name="frame" required> 
+						<option value="" selected></option> 
+						<option value="עגול">round</option> 
+						<option value="מרובע">square</option> 
+					</select></p>
+					<input class="submitButton" type="submit" value="submit">
+				
+			</form>
+			</main>
+			<script type="text/javascript">
+				loadEditGlasses();
+			</script>
+			<footer>
+				<nav id="navInFooterHomeP">
+					<ul>
+						<li><a href="#">אודות</a></li>
+						<li><a href="#">שרות לקוחות </a></li>
+						<li><a href="#">צור קשר</a></li>
+						<li><a href="#">מועדון לקוחות</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Franchiding opportunities</a></li>
+						<li><a href="collection.php">Collections</a></li>
+						<li><a href="#">Hot In rroca</a></li>
+						<li><a href="#">Magazine</a></li>
+					</ul>
+					<div class="clear"></div>
+					<p>
+						2017(c) רוקה בע"מ כל הזכויות שמורות
+					</p>
+				</nav>
+			</footer>		
+		</div>
+	</body>
+</html>

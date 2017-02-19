@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>gallery test page</title>
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="includs/jquery-3.1.1.min.js"></script>
+	
+	<style type="text/css">
+   /*glass pictures begin*************************/
+    
+    .glass_item{
+    	width:100%;
+    	height:100%;
+    	background-size: 100% 100%;
+    }
+    
+    .item_black_square{
+
+	background-image: url(images/glasses_black_square.png);
+}
+.item_black_round{
+	
+	background-image:  url(images/glasses_black_round.png);
+}
+.item_brown{
+
+	background-image:  url(images/glasses_brown.png);
+}
+    
+   /*responsive begin*******************/
+    
+    #wrap {
+      overflow: hidden;
+    }
+    .box {
+      width: 20%;
+      padding-bottom: 20%;
+      
+      position: relative;
+      float: left;
+    }
+    .innerContent {
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      top: 1px;
+      bottom: 1px;
+      
+      padding: 10px;
+    }
+    @media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .box {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      .box {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+    }
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 4 tiles */
+      .box {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+    }
+    
+    
+    
+    
+    
+  </style>
+
+</head>
+<body>
+	 <div id="wrap">
+    <div class="box">
+      <div class="innerContent">
+        <div class="item_black_round glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="item_black_round glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="item_black_square glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="item_black_square glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="item_black_square glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="item_black_square glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="glasses_brown glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="glasses_brown glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="glasses_brown glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="glasses_brown glass_item"></div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <div class="glasses_brown glass_item"></div>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>

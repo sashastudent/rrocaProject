@@ -35,7 +35,7 @@
 				
 				<?php 
 					include ('includs/db.php');
-					$query = 'SELECT pic FROM  tbl_collections_223';
+					$query = 'SELECT pic, id FROM  tbl_collections_223';
 					$result = mysqli_query($connection, $query);
 					if(!$result){
 						die("DB query failed");
@@ -43,8 +43,9 @@
 					
 					while($row = mysqli_fetch_assoc($result)){
 						$imageUrl = "images/collections/".$row['pic'];
+						$idColec = $row['id'];
 						echo "<div class='itemBox'>";
-						echo "<a href='items.html', style='background-image: url(".$imageUrl.")'></a></div>" ;				
+						echo "<a href='items.html?collection=".$idColec."', style='background-image: url(".$imageUrl.")'></a></div>" ;				
 					}
 					
 					mysqli_free_result($result); 
