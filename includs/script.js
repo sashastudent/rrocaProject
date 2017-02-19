@@ -137,37 +137,7 @@ var getTable = function() {
 		tableHtml += "</table>";
 
 		$('#admin_table').html(tableHtml);
-		/*
-		 $('#admin_table').html("<table><tr>"+
-		 "<th class=col_head1>Index</th>"+
-		 "<th class=col_head2>Model</th>"+
-		 "<th class=col_head3>Price</th>"+
-		 "<th class=col_head4>Is optic</th>"+
-		 "<th class=col_head5>Is poleroid</th>"+
-		 "<th>Name</th>"+
-		 "<th>Collection</th>"+
-		 "<th>Gender</th>"+
-		 "<th>Color</th>"+
-		 "<th>Frame</th>"+
-		 "</tr>");
-		 $.each(data, function(){
-		 $('#admin_table').append("<tr>"+
-		 "<td>"+this.index+"</td>"+
-		 "<td>"+this.model+"</td>"+
-		 "<td>"+this.price+"</td>"+
-		 "<td>"+this.is_optic+"</td>"+
-		 "<td>"+this.is_poleroid+"</td>"+
-		 "<td>"+this.pic_name+"</td>"+
-		 "<td>"+this.collection+"</td>"+
-		 "<td>"+this.gender+"</td>"+
-		 "<td>"+this.color+"</td>"+
-		 "<td>"+this.frame+"</td>"+
-		 "</tr>" );
-
-		 });
-		 $('#admin_table').append("</table>");
-		 });
-		 */
+	
 
 	});
 	//getJson
