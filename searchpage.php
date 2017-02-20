@@ -94,7 +94,3 @@
 		</div>
 	</body>
 </html>
-<?
-//close DB connectoion 
-mysqli_close($connaction);
-?>

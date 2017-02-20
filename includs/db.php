@@ -5,6 +5,7 @@ $dbuser = "auxstudDB6c";
 $dbpass = "auxstud6cDB1!";
 $dbname = "auxstudDB6c";
 $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+mysqli_set_charset($connection, "utf8");
 
  //testing connection success
  if(mysqli_connect_errno()) {
