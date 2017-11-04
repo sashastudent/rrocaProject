@@ -35,7 +35,7 @@
 				
 				<?php 
 					include ('includs/db.php');
-					$query = 'SELECT pic, id FROM  tbl_collections_223';
+					$query = 'SELECT pic, id FROM  hb_rocca.tbl_collections_223';
 					$result = mysqli_query($connection, $query);
 					if(!$result){
 						die("DB query failed");

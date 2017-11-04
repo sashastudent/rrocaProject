@@ -3,8 +3,8 @@
 if (!isset($_POST['submit'])) {
 	include ('db.php');
 	$query = "SELECT I.price, I.pic_name, I.model, I.collection, C.name
-							  FROM tbl_item_223 I
-							  INNER JOIN tbl_collections_223 C
+							  FROM hb_rocca.tbl_item_223 I
+							  INNER JOIN hb_rocca.tbl_collections_223 C
 							  ON C.id = I.collection
 							  WHERE C.id = I.collection";
 
@@ -36,8 +36,8 @@ if (!isset($_POST['submit'])) {
 	$text = $connection -> real_escape_string($_POST['text']);
 
 	$query = "SELECT I.color, I.frame, I.price, I.pic_name, I.model, I.gender, C.name, I.is_poleroid, I.is_optic
-							  FROM tbl_item_223 I
-							  INNER JOIN tbl_collections_223 C
+							  FROM hb_rocca.tbl_item_223 I
+							  INNER JOIN hb_rocca.tbl_collections_223 C
 							  ON C.id = I.collection
 							  WHERE C.id = I.collection
 							  AND I.price >= '$fprice'

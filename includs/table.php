@@ -2,21 +2,20 @@
  
  
  //$collection = $_GET['collection'];
- 
  //create a mySQL DB connection:
-$dbhost = "182.50.133.146";
-$dbuser = "auxstudDB6c";
-$dbpass = "auxstud6cDB1!";
-$dbname = "auxstudDB6c";
- $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-
+$dbhost = "127.0.0.1:3306";
+$dbuser = "hbuser";
+$dbpass = "hbuser";
+$dbname = "hb_rocca";
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+mysqli_set_charset($connection, "utf8");
  //testing connection success
  if(mysqli_connect_errno()) {
  die("DB connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")"
  );
  }
  
- $query="SELECT * FROM tbl_item_223";
+ $query="SELECT * FROM hb_rocca.tbl_item_223";
 
  //$query="SELECT *, tbl_collections_223.pic FROM tbl_item_223 INNER JOIN tbl_collections_223 where tbl_collection_223.id=".collection." and tbl_item_223.collection=".collection;
  $result= mysqli_query($connection, $query);
