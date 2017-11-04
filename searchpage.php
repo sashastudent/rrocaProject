@@ -68,7 +68,6 @@
 				<p class="isresponsiv">no responsive for phone</p>
 				<section>
 				<?php
-				//ddfdffff
 						include ('includs/search.php');	
 				?>
 				<div class="clear"></div>
